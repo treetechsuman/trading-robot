@@ -1,0 +1,35 @@
+
+
+#TOKEN = "c4f7c3f82b7986f5d395c01c696e2c024b4d730e"
+#con = fxcmpy.fxcmpy(access_token=TOKEN, log_level='error', server='demo', log_file='log.txt')
+#candle_data=con.get_candles('EUR/USD', period='M1')
+#df = pd.DataFrame(candle_data);
+##instruments = con.get_instruments()
+##instruments = pd.read_csv("instruments.csv")
+##df = pd.DataFrame(instruments)
+##instruments = df[0:10]
+##df.replace({ '.us': '', '\$': '', ',': '', '^\w*?([A-Z]{3})_+([A-Z]{3}).*':'' }, regex=True)
+##print(instruments)
+##df.to_csv("instruments.csv", index=False)
+##external_stylesheets = ['https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T']
+# Bootstrap themes by Ann: https://hellodash.pythonanywhere.com/theme_explorer CYBORG LUX
+
+if os.path.exists('EURUSD.csv'):
+    print("File EXIst")
+    df=pd.read_csv("EURUSD.csv", parse_dates=True, index_col=0)
+
+else:
+    print("file not exit")
+    TOKEN = "c4f7c3f82b7986f5d395c01c696e2c024b4d730e"
+    con = fxcmpy.fxcmpy(access_token=TOKEN, log_level='error', server='demo', log_file='log.txt')
+    candle_data=con.get_candles('EUR/USD', period='M1')
+    ## save candata in csv
+    df = pd.DataFrame(candle_data)
+    df.to_csv("EURUSD.csv")
+##pd.set_option('display.width', 200)
+##pd.set_option('display.max_columns', None)
+
+
+print(df.head())
+df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv')
+print(df.head())

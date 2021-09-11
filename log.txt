@@ -1,0 +1,136 @@
+|INFO|2021-09-08 17:54:39,615|Dash is running on http://127.0.0.1:8050/
+
+|INFO|2021-09-08 17:54:39,615| * Running on http://127.0.0.1:8050/ (Press CTRL+C to quit)
+|INFO|2021-09-08 18:56:21,730|Dash is running on http://127.0.0.1:8050/
+
+|INFO|2021-09-08 18:56:21,746| * Running on http://127.0.0.1:8050/ (Press CTRL+C to quit)
+|INFO|2021-09-08 19:23:23,167|Dash is running on http://127.0.0.1:8050/
+
+|INFO|2021-09-08 19:23:23,175| * Running on http://127.0.0.1:8050/ (Press CTRL+C to quit)
+|INFO|2021-09-08 19:40:09,730|Dash is running on http://127.0.0.1:8050/
+
+|INFO|2021-09-08 19:40:09,738| * Running on http://127.0.0.1:8050/ (Press CTRL+C to quit)
+|INFO|2021-09-08 19:44:18,450|Dash is running on http://127.0.0.1:8050/
+
+|INFO|2021-09-08 19:44:18,450| * Running on http://127.0.0.1:8050/ (Press CTRL+C to quit)
+|INFO|2021-09-08 19:44:26,638|127.0.0.1 - - [08/Sep/2021 19:44:26] "GET / HTTP/1.1" 200 -
+|INFO|2021-09-08 19:44:26,870|127.0.0.1 - - [08/Sep/2021 19:44:26] "GET /_dash-layout HTTP/1.1" 200 -
+|INFO|2021-09-08 19:44:26,878|127.0.0.1 - - [08/Sep/2021 19:44:26] "GET /_dash-dependencies HTTP/1.1" 200 -
+|INFO|2021-09-08 19:44:26,974|127.0.0.1 - - [08/Sep/2021 19:44:26] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+|INFO|2021-09-08 19:44:27,006|127.0.0.1 - - [08/Sep/2021 19:44:27] "GET /_dash-component-suites/dash/dcc/async-plotlyjs.js HTTP/1.1" 200 -
+|ERROR|2021-09-08 19:44:27,030|Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\indexes\base.py", line 3361, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 76, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\dash\dash.py", line 1336, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\dash\_callback.py", line 151, in add_context
+    output_value = func(*func_args, **func_kwargs)  # %% callback invoked %%
+  File "E:/python/projects/TradingRobot/index.py", line 68, in display_candlestick
+    x=df['date'],
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\frame.py", line 3455, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\indexes\base.py", line 3363, in get_loc
+    raise KeyError(key) from err
+KeyError: 'date'
+|INFO|2021-09-08 19:44:27,046|127.0.0.1 - - [08/Sep/2021 19:44:27] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+|INFO|2021-09-08 19:49:16,551|Dash is running on http://127.0.0.1:8050/
+
+|INFO|2021-09-08 19:49:16,559| * Running on http://127.0.0.1:8050/ (Press CTRL+C to quit)
+|INFO|2021-09-08 19:49:20,404|127.0.0.1 - - [08/Sep/2021 19:49:20] "GET / HTTP/1.1" 200 -
+|INFO|2021-09-08 19:49:20,644|127.0.0.1 - - [08/Sep/2021 19:49:20] "GET /_dash-layout HTTP/1.1" 200 -
+|INFO|2021-09-08 19:49:20,644|127.0.0.1 - - [08/Sep/2021 19:49:20] "GET /_dash-dependencies HTTP/1.1" 200 -
+|INFO|2021-09-08 19:49:20,757|127.0.0.1 - - [08/Sep/2021 19:49:20] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+|INFO|2021-09-08 19:49:20,773|127.0.0.1 - - [08/Sep/2021 19:49:20] "GET /_dash-component-suites/dash/dcc/async-plotlyjs.js HTTP/1.1" 200 -
+|ERROR|2021-09-08 19:49:20,797|Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\indexes\base.py", line 3361, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 76, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\dash\dash.py", line 1336, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\dash\_callback.py", line 151, in add_context
+    output_value = func(*func_args, **func_kwargs)  # %% callback invoked %%
+  File "E:/python/projects/TradingRobot/index.py", line 68, in display_candlestick
+    x=df['date'],
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\frame.py", line 3455, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\pandas\core\indexes\base.py", line 3363, in get_loc
+    raise KeyError(key) from err
+KeyError: 'date'
+|INFO|2021-09-08 19:49:20,805|127.0.0.1 - - [08/Sep/2021 19:49:20] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+|INFO|2021-09-08 19:50:29,134|Dash is running on http://127.0.0.1:8050/
+
+|INFO|2021-09-08 19:50:29,134| * Running on http://127.0.0.1:8050/ (Press CTRL+C to quit)
+|INFO|2021-09-09 17:53:03,307|Dash is running on http://127.0.0.1:8050/
+
+|INFO|2021-09-09 17:53:03,311| * Running on http://127.0.0.1:8050/ (Press CTRL+C to quit)
+|INFO|2021-09-09 17:53:07,750|127.0.0.1 - - [09/Sep/2021 17:53:07] "GET / HTTP/1.1" 200 -
+|INFO|2021-09-09 17:53:08,061|127.0.0.1 - - [09/Sep/2021 17:53:08] "GET /_dash-layout HTTP/1.1" 200 -
+|INFO|2021-09-09 17:53:08,063|127.0.0.1 - - [09/Sep/2021 17:53:08] "GET /_dash-dependencies HTTP/1.1" 200 -
+|INFO|2021-09-09 17:53:08,135|127.0.0.1 - - [09/Sep/2021 17:53:08] "GET /_favicon.ico?v=2.0.0 HTTP/1.1" 200 -
+|INFO|2021-09-09 17:53:08,164|127.0.0.1 - - [09/Sep/2021 17:53:08] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+|INFO|2021-09-09 17:53:08,182|127.0.0.1 - - [09/Sep/2021 17:53:08] "GET /_dash-component-suites/dash/dcc/async-plotlyjs.js HTTP/1.1" 200 -
+|INFO|2021-09-09 17:53:08,305|127.0.0.1 - - [09/Sep/2021 17:53:08] "POST /_dash-update-component HTTP/1.1" 200 -
+|INFO|2021-09-09 18:00:41,121|Dash is running on http://127.0.0.1:8050/
+
+|INFO|2021-09-09 18:00:41,125| * Running on http://127.0.0.1:8050/ (Press CTRL+C to quit)
+|ERROR|2021-09-09 19:55:47,847|Error in get_candles: Illegal period: 1H.
+|ERROR|2021-09-09 19:55:47,859|Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\dash\dash.py", line 1336, in dispatch
+    response.set_data(func(*args, outputs_list=outputs_list))
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\dash\_callback.py", line 151, in add_context
+    output_value = func(*func_args, **func_kwargs)  # %% callback invoked %%
+  File "E:/python/projects/TradingRobot/index.py", line 43, in display_candlestick
+    fig = second_chart.draw_chart()
+  File "E:\python\projects\TradingRobot\chart.py", line 41, in draw_chart
+    df = self.get_data()
+  File "E:\python\projects\TradingRobot\chart.py", line 35, in get_data
+    data = con.get_candles('EUR/USD', period=self.time_frame, start=start, stop=stop)
+  File "C:\Users\61426\AppData\Local\Programs\Python\Python37-32\lib\site-packages\fxcmpy\fxcmpy.py", line 2124, in get_candles
+    raise ValueError('period must be one of %s.' % self.PERIODS)
+ValueError: period must be one of ['m1', 'm5', 'm15', 'm30', 'H1', 'H2', 'H3', 'H4', 'H6', 'H8', 'D1', 'W1', 'M1'].
+|INFO|2021-09-09 19:55:47,906|127.0.0.1 - - [09/Sep/2021 19:55:47] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+|INFO|2021-09-09 19:59:11,034|127.0.0.1 - - [09/Sep/2021 19:59:11] "POST /_dash-update-component HTTP/1.1" 200 -
