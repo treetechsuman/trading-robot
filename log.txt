@@ -134,3 +134,10 @@ Traceback (most recent call last):
 ValueError: period must be one of ['m1', 'm5', 'm15', 'm30', 'H1', 'H2', 'H3', 'H4', 'H6', 'H8', 'D1', 'W1', 'M1'].
 |INFO|2021-09-09 19:55:47,906|127.0.0.1 - - [09/Sep/2021 19:55:47] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
 |INFO|2021-09-09 19:59:11,034|127.0.0.1 - - [09/Sep/2021 19:59:11] "POST /_dash-update-component HTTP/1.1" 200 -
+|INFO|2021-09-09 20:03:29,530|127.0.0.1 - - [09/Sep/2021 20:03:29] "GET / HTTP/1.1" 200 -
+|INFO|2021-09-09 20:03:29,725|127.0.0.1 - - [09/Sep/2021 20:03:29] "GET /_dash-layout HTTP/1.1" 200 -
+|INFO|2021-09-09 20:03:29,727|127.0.0.1 - - [09/Sep/2021 20:03:29] "GET /_dash-dependencies HTTP/1.1" 200 -
+|INFO|2021-09-09 20:03:29,788|127.0.0.1 - - [09/Sep/2021 20:03:29] "GET /_favicon.ico?v=2.0.0 HTTP/1.1" 200 -
+|INFO|2021-09-09 20:03:29,811|127.0.0.1 - - [09/Sep/2021 20:03:29] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+|INFO|2021-09-09 20:03:29,823|127.0.0.1 - - [09/Sep/2021 20:03:29] "GET /_dash-component-suites/dash/dcc/async-plotlyjs.js HTTP/1.1" 200 -
+|INFO|2021-09-09 20:03:30,065|127.0.0.1 - - [09/Sep/2021 20:03:30] "POST /_dash-update-component HTTP/1.1" 200 -
